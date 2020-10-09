@@ -23,7 +23,7 @@ img {
   width: 100%;
 }
 
-header {
+body > header {
   background-image: url("../images/anchors.svg");
   color: #fff;
   font-size: 1.125rem;
@@ -46,7 +46,7 @@ article div {
   padding: 1rem;
 }
 
-article header {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -86,7 +86,7 @@ nav a {
   border: 0;
   border-radius: 6px;
   color: #fff;
-  padding: 0.5rem;
+  padding: .5rem;
   width: 2.5rem;
   height: 2.5rem;
 }
@@ -94,6 +94,11 @@ nav a {
 nav a:hover,
 nav a:focus {
   background-color: #1e7c74;
+}
+
+nav a:focus {
+  outline: .2rem solid #000;
+  outline-offset: .1rem;
 }
 
 .icon {
